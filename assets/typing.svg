@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="70" viewBox="0 0 760 70" role="img" aria-labelledby="title description">
+  <title id="title">Animated introduction</title>
+  <desc id="description">Hi, I'm suakitsu. I turn ideas into useful things. Tools, projects, and experiments.</desc>
+  <style>
+    .message {
+      fill: #1f2328;
+      font-family: Consolas, "SFMono-Regular", "Liberation Mono", monospace;
+      font-size: 30px;
+      font-weight: 600;
+      text-anchor: middle;
+      opacity: 0;
+      clip-path: inset(0 100% 0 0);
+    }
+    .message-a { animation: message-a 12s steps(18, end) infinite; }
+    .message-b { animation: message-b 12s steps(31, end) infinite; }
+    .message-c { animation: message-c 12s steps(29, end) infinite; }
+    .cursor { fill: #0969da; animation: cursor 0.8s steps(1, end) infinite; }
+    @keyframes message-a {
+      0% { opacity: 1; clip-path: inset(0 100% 0 0); }
+      8%, 27% { opacity: 1; clip-path: inset(0 0 0 0); }
+      31%, 100% { opacity: 0; clip-path: inset(0 0 0 0); }
+    }
+    @keyframes message-b {
+      0%, 33% { opacity: 0; clip-path: inset(0 100% 0 0); }
+      34% { opacity: 1; clip-path: inset(0 100% 0 0); }
+      43%, 61% { opacity: 1; clip-path: inset(0 0 0 0); }
+      65%, 100% { opacity: 0; clip-path: inset(0 0 0 0); }
+    }
+    @keyframes message-c {
+      0%, 67% { opacity: 0; clip-path: inset(0 100% 0 0); }
+      68% { opacity: 1; clip-path: inset(0 100% 0 0); }
+      77%, 95% { opacity: 1; clip-path: inset(0 0 0 0); }
+      100% { opacity: 0; clip-path: inset(0 0 0 0); }
+    }
+    @keyframes cursor { 50% { opacity: 0; } }
+    @media (prefers-color-scheme: dark) {
+      .message { fill: #f0f6fc; }
+      .cursor { fill: #79c0ff; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .message-a { opacity: 1; clip-path: inset(0 0 0 0); animation: none; }
+      .message-b, .message-c { animation: none; }
+      .cursor { animation: none; }
+    }
+  </style>
+  <text class="message message-a" x="380" y="45">Hi, I'm suakitsu.<tspan class="cursor">_</tspan></text>
+  <text class="message message-b" x="380" y="45">I turn ideas into useful things.<tspan class="cursor">_</tspan></text>
+  <text class="message message-c" x="380" y="45">Tools · projects · experiments<tspan class="cursor">_</tspan></text>
+</svg>
