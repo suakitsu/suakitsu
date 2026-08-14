@@ -15,11 +15,3 @@
 持续打磨已有项目，也在尝试新的技术、工具和有趣的想法。
 
 `Java` · `Python` · `TypeScript` · `Go` · `AI & more`
-
-## Contributions
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/suakitsu/suakitsu/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/suakitsu/suakitsu/output/github-contribution-grid-snake.svg">
-  <img alt="Animated contribution graph" src="https://raw.githubusercontent.com/suakitsu/suakitsu/output/github-contribution-grid-snake.svg">
-</picture>
